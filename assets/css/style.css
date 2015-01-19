@@ -179,10 +179,10 @@ a {
   #icon-email:before {
     content: "\e800"; }
 
-#icon-feed {
+#icon-googleplus {
   border-left: 1px solid #525965; }
-  #icon-feed:before {
-    content: "\e802"; }
+  #icon-googleplus:before {
+    content: "\e803"; }
 
 .tags-btn {
   color: #a6a6a7;
@@ -486,11 +486,11 @@ iframe {
   #icon-twitter:before {
     content: "\e805"; }
 
-#icon-cc {
+#icon-gplus {
   margin-left: -20px; }
-  #icon-cc:hover {
+  #icon-gplus:hover {
     color: #f8ce5e; }
-  #icon-cc:before {
+  #icon-gplus:before {
     content: "\e803"; }
 
 #icon-weibo {
