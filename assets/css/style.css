@@ -243,21 +243,21 @@ a {
 .pl__all {
   margin: 4px 12px;
   padding: 4px 8px 3px;
-  border-radius: 4px;
   display: block; }
-  .pl__all:hover {
-    background: rgba(242, 242, 242, 0.5); }
+  .pl__all:hover, .pl__all:hover > .pl__date {
+    background: #fafafa; }
   .pl__all:visited > .pl__circle {
     background: #fafafa; }
   .pl__all:visited:hover > .pl__circle {
     background: rgba(242, 242, 242, 0.5); }
   .pl__all.active {
     color: #29a284;
-    background: rgba(242, 242, 242, 0.5);
-    box-shadow: -1px 1px rgba(229, 232, 236, 0.9); }
+    background: #fff; }
     .pl__all.active > .pl__circle {
       background: rgba(242, 242, 242, 0.5);
       border-color: #29a284; }
+    .pl__all.active > .pl__date {
+      background: #fff; }
   @media screen and (max-width: 585px) {
     .pl__all {
       margin: 4px 0;
@@ -280,7 +280,10 @@ a {
 .pl__date {
   color: #9aa4af;
   font-size: 14px;
-  float: right; }
+  padding-left: 5px;
+  background: #f5f5f5;
+  position: absolute;
+  right: 1.25em; }
 
 /*---------------------------------*\
    Post
