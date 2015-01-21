@@ -322,6 +322,7 @@ a {
     animation: fadeOut .2s; }
   @media screen and (min-width: 1281px) {
     #pjax {
+      padding-right: 85px;
       max-width: 100%; } }
   @media screen and (max-width: 1280px) {
     #pjax {
