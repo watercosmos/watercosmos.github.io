@@ -4,7 +4,9 @@ title: SOCKS4&#58; 用于穿透防火墙的TCP代理协议 (译)
 
 
 
-本文全文翻译自 SOCKS4 协议文档.
+本文全文翻译自 SOCKS4 协议文档. 关于 SOCKS5 协议请参阅我的另一篇博客: [<RFC 1928: SOCKS5 协议 (译)>][1].
+
+[1]: http://lhy.im/socks5-protocol
 
 原文: <http://ftp.icm.edu.pl/packages/socks/socks4/SOCKS4.protocol>
 
@@ -28,9 +30,9 @@ SOCKS 最初由 David Koblas 开发, 随后由 Ying-Da Lee 修改并扩展至第
 
 VN 代表 SOCKS 协议版本, 应为 4. CD 代表 SOCKS 命令码, 连接请求应为 1. NULL 为 1 字节全零位.
 
-SOCKS 服务器根据源 IP 地址, 目的 IP 地址, 目的端口号, 用户 ID 以及从 IDENT 协议获取的信息 (参照 [RFC 1413][1]) 间的任意组合, 判断请求是否通过. 如果请求获得通过, SOCKS 服务器将建立一个与目标主机指定端口号的连接. 当连接已建立, 或请求被拒绝以及其他原因操作失败时, SOCKS 服务器将向客户端发送一个中继包.
+SOCKS 服务器根据源 IP 地址, 目的 IP 地址, 目的端口号, 用户 ID 以及从 IDENT 协议获取的信息 (参照 [RFC 1413][2]) 间的任意组合, 判断请求是否通过. 如果请求获得通过, SOCKS 服务器将建立一个与目标主机指定端口号的连接. 当连接已建立, 或请求被拒绝以及其他原因操作失败时, SOCKS 服务器将向客户端发送一个中继包.
 
-[1]: https://www.ietf.org/rfc/rfc1413.txt
+[2]: https://www.ietf.org/rfc/rfc1413.txt
 
                    +----+----+----+----+----+----+----+----+
                    | VN | CD | DSTPORT |       DSTIP       |
