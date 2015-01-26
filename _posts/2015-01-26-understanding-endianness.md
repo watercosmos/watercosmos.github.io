@@ -10,7 +10,7 @@ title: 关于剥鸡蛋的圣战&#58; 理解字节序 (Endianness)
 1\. 词源
 --------
 
-"endianness" 一词来源于小说 <格列佛游记>. 小说中，小人国国王发布敕令, 要求子民吃水煮蛋时必须从小的一端 (Little-End) 剥开, 由此引发 6 次叛乱, 11000 人死于坚持从大的一端 (Big-End) 剥开. 这个讽刺当时英法冲突的故事被 Danny Cohen 引用在 "On Holy Wars and a Plea for Peace" 一文中, 用以描述字节序之争, 后被广泛接受.
+"endianness" 一词来源于小说 <格列佛游记>. 小说中, 小人国国王发布敕令, 要求子民吃水煮蛋时必须从小的一端 (Little-End) 剥开, 由此引发 6 次叛乱, 11000 人死于坚持从大的一端 (Big-End) 剥开. 这个讽刺当时英法冲突的故事被 Danny Cohen 引用在 "On Holy Wars and a Plea for Peace" 一文中, 用以描述字节序之争, 后被广泛接受.
 
 
 2\. 概念
@@ -57,7 +57,7 @@ Intel x86 和 x86-64, 8051, Atmel AVR, Z80 等处理器架构使用小端序格�
 
 小端序: 同一数值以不同精度读取时, 无需改变数据的内存地址, 如 int, short, char 类型转化.
 
-二者没有孰优孰劣, 然而由来已久, 均势已成, 争论的声音似乎也很小.
+二者没有孰优孰劣之分, 然而不同实现由来已久, 均势已成, 争论的声音似乎也很小.
 
 
 6\. 网络字节序 (network byte order)
@@ -124,4 +124,4 @@ src 二进制值为 0b00110110, 以类似小端序的方式赋值 (不是基于�
 9\. 引用
 --------
 
-[1]: 维基百科 <http://en.wikipedia.org/wiki/Endianness>
+\[1\]: 维基百科 <http://en.wikipedia.org/wiki/Endianness>
