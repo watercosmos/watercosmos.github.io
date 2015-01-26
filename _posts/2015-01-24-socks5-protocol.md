@@ -27,7 +27,7 @@ Category: Standards Track
 
 本备忘录描述了 [SOCKS4 协议][2] \[1\] 的一个演进版. 新的协议来源于积极的讨论与原型实现. 主要贡献者有: Marcus Leech: 贝尔-北方研究中心, David Koblas: 独立顾问, Ying-Da Lee: NEC 系统实验室, LaMont Jones: 惠普, Ron Kuris: 统一通信, Matt Ganis: IBM.
 
-\[译者注\]: 请参阅我的上一篇博客: [<SOCKS4: 用于穿透防火墙的TCP代理协议 (译)>][3].
+\[译者注\]: 请参阅我的另一篇博客: [<SOCKS4: 用于穿透防火墙的TCP代理协议 (译)>][3].
 
 [2]: http://ftp.icm.edu.pl/packages/socks/socks4/SOCKS4.protocol
 [3]: http://lhy.im/socks4-protocol
@@ -124,7 +124,12 @@ SOCKS 请求格式如下:
     -   DOMAINNAME:    X'03'
     -   IP V6 地址:    X'04'
 -   DST.ADDR  所需目的地址
--   DST.PORT  所需目的端口号, 以网络字节顺序出现
+-   DST.PORT  所需目的端口号, 以[网络字节序][4]出现
+
+\[译者注\]: 关于网络字节序, 请参阅我的另一篇博客: [<关于剥鸡蛋的圣战: 理解字节序 (Endianness)>][5]
+
+[4]: http://lhy.im/understanding-endianness
+[5]: http://lhy.im/understanding-endianness
 
 SOCKS 服务器通常根据源地址和目的地址来评估请求, 然后返回一个或多个与请求类型对应的回复消息.
 
@@ -178,7 +183,7 @@ SOCKS 服务器通常根据源地址和目的地址来评估请求, 然后返回
     -   域名:       X'03'
     -   IPV6 地址:  X'04'
 -   BND.ADDR  服务器绑定地址
--   BND.PORT  服务器绑定端口号, 以网络字节顺序出现
+-   BND.PORT  服务器绑定端口号, 以网络字节序出现
 
 保留域 RESERVED (RSV) 必须置为 X'00'.
 
