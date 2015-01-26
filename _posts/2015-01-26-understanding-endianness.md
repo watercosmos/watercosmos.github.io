@@ -50,8 +50,8 @@ Intel x86 和 x86-64, 8051, Atmel AVR, Z80 等处理器架构使用小端序格�
 5\. 对比
 --------
 
-![big-endian](/assets/big-endian.svg "big-endian")
-![little-endian](/assets/little-endian.svg "little-endian")
+![big-endian](/assets/img/big-endian.png "big-endian")
+![little-endian](/assets/img/little-endian.png "little-endian")
 
 大端序: 进行数值比较与近似值计算时, 如正负判断, 只需要从地址最低位的符号位开始读取, 通常读取高位数值即可, 而不必读取完整取值.
 
